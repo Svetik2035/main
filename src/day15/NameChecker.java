@@ -1,0 +1,57 @@
+package day15;
+
+import java.util.Scanner;
+
+public class NameChecker {
+    public static void main(String[] args) {
+       /*String myName = "Svetlana";
+        int nameLength =8;
+
+        if(nameLength < 4) {
+            System.out.println("Short name");
+        }else if(nameLength>= 4 && nameLength<=11) {
+            System.out.println("medium Name");
+        }else if (nameLength>11) {
+            System.out.println("longer name");*/
+         //   Task 1 :
+            //Name checker :
+            //Declare a variable to store your name
+            //check whether you name length is less than 4
+            //  if so print short Name
+            //  if it is within 5-10
+            //	if so print medium Name
+            //	if it's more than 11
+            //	print longer name
+            //------------------------------
+            //check whether your name has either character a or e
+            // if so -->> name contains a or e
+            // if not -->> i don't have both a or e in my name
+            //Optional print out your name in reverse order
+            Scanner scan =new Scanner(System.in);
+            System.out.println("Enter your name, please : ");
+            String name = scan.next();
+             int lengthOfTheName = name.length();
+            System.out.println("length Of The Name = " + lengthOfTheName );
+
+            if(lengthOfTheName < 4) {
+                System.out.println("Short name");
+            }else if(lengthOfTheName>= 4 && lengthOfTheName<=11) {// or we can just say:}else if(lengthOfTheName<=11) {
+                System.out.println("medium Name");
+            }else{
+                System.out.println("longer name");
+                //--------------------------------------
+                if( name.contains ("a") || name.contains ("e")){
+                    System.out.println("name contains a or e");
+                }else{
+                    System.out.println("i don't have both a or e in my name");
+                   //-----------------------------------------------------
+
+                }
+            }
+
+
+
+
+        }
+    }
+
